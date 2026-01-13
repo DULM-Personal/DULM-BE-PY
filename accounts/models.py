@@ -68,7 +68,7 @@ class EmailVerification(models.Model):
     code = models.CharField(max_length=6)
     is_used = models.BooleanField(default=False)
 
-    create_at = models.DateTimeField(auto_now_add=True)
+    created_at = models.DateTimeField(auto_now_add=True)
     expires_at = models.DateTimeField()
 
     @staticmethod
